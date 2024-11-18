@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            min-height: 1250px;
+            background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+        }
+        .card{
+            height: 660px;
+            width: 450px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+    width: 70%;      
+      text-align: center;
+      }
+      #amountbox{
+        width: 80%;
+        height: 10%;
+        gap: 20px;
+        background-color: violet;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #paymentbutton{
+        width: 80%;
+        height: 9%;
+        background-color: gold;
+        color:black ;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+      .cancelbox{
+        text-decoration: none;
+        color: grey;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="card2.jpg" alt="">
+            <div class="textbox"> <h2>Order Summary</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, ad earum! Sunt 
+                    repellat aperiam ullam, sed molestiae exercitationem pariatur excepturi!
+                </p></div>
+                </div>
+          </div>
+
+<button id="paymentbutton">Proceed to Payment!</button>
+<div class="cancelbox">
+    <a href="#">Cancel Order</a>
+   </div>
+</div>
+</body>
+</html>
