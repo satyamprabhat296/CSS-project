@@ -1,0 +1,270 @@
+/* Reset all margins and paddings to remove unwanted spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    font-family: "Arial", sans-serif;
+}
+
+/* Container setup */
+.container {
+    background-image: url("background img.png");
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    max-width: 1000px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    border-radius: 15px;
+    background-color: rgba(255, 132, 0, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3rem;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* User container */
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    font-weight: 850;
+    color: white;
+}
+
+/* Input fields container */
+.user-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* User input field */
+#user-input {
+    width: 20rem;
+    min-width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Search button */
+#search-btn {
+    width: 12rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    background-color: #ffa500;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Handjet", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease ease-in-out;
+}
+
+#search-btn:hover {
+    transform: scale(1.05);
+    background-color: #fda24f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Circular button styling */
+.circle {
+    border: 4px solid #eda006;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(#eda006 0%, rgba(9, 198, 9, 0.46) 50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #141313;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    background: conic-gradient(rgba(9, 198, 9, 0.46) 0%, #eda006 50%);
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Keyframes for shaking animation */
+@keyframes shake {
+    0% { transform: translate(1px, 1px); }
+    10% { transform: translate(-1px, -2px); }
+    20% { transform: translate(-3px, 0px); }
+    30% { transform: translate(3px, 2px); }
+    40% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 2px); }
+    100% { transform: translate(1px, -2px); }
+}
+
+/* Progress bar styling */
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+/* Stats card container */
+.stats-card {
+    display: none;
+    margin-top: 2rem;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Individual stat cards */
+.card {
+    width: 170px;
+    height: 60px;
+    background-color: #36d96f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #141313;
+    transition: all 0.3s ease ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #2ed468;
+}
+
+/* Irregular heading shape */
+.irregular-shape {
+    width: 300px;
+    height: 70px;
+    background-color: rgba(255, 132, 0, 0.8);
+    clip-path: polygon(30% 10%, 20% 5%, 40% 10%, 60% 15%, 80% 20%, 90% 40%, 90% 60%, 60% 80%, 50% 80%, 40% 85%, 10% 60%, 10% 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.irregular-shape h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 550px) {
+    .container {
+        width: 90%;
+    }
+
+    .user-input-container {
+        width: 90%;
+    }
+
+    #user-input {
+        width: 80%;
+    }
+
+    #search-btn {
+        width: 9rem;
+    }
+
+    .irregular-shape {
+        width: 250px;
+        height: 60px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 250px) {
+    .container {
+        width: 95%;
+    }
+
+    .user-input-container {
+        width: 100%;
+    }
+
+    #user-input {
+        width: 7rem;
+    }
+
+    #search-btn {
+        width: 6rem;
+    }
+
+    .irregular-shape {
+        width: 180px;
+        height: 50px;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* Basic confetti styles */
+@keyframes confettiFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+#confetti-container .confetti {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: confettiFall 3s linear infinite;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
